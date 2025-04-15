@@ -16,7 +16,7 @@ public class ResolutionTest {
                 new Dimension(800, 600)     // VENTANA_VGA
         };
 
-        Resolution[] resoluciones = Resolution.values();
+        Resolucion[] resoluciones = Resolucion.values();
 
         for (int i = 0; i < esperadas.length; i++) {
             assertEquals(esperadas[i], resoluciones[i].getResolution());
