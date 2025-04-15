@@ -19,7 +19,7 @@ public class ResolutionTest {
         Resolucion[] resoluciones = Resolucion.values();
 
         for (int i = 0; i < esperadas.length; i++) {
-            assertEquals(esperadas[i], resoluciones[i].getResolution());
+            assertEquals(esperadas[i], resoluciones[i].getResolucion());
         }
 
     }
