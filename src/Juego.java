@@ -1,6 +1,4 @@
 import bpc.daw.consola.Consola;
-
-import java.awt.*;
 import java.awt.event.KeyEvent;
 
 public class Juego {
