@@ -1,5 +1,6 @@
 import bpc.daw.consola.Consola;
 import java.awt.event.KeyEvent;
+import java.security.Key;
 
 public class Juego {
     private Consola consola;
@@ -17,7 +18,7 @@ public class Juego {
         this.resolucion = r;
         this.setEscena(e);
         this.detener = false;
-        while (!detener || this.consola.getTeclado().teclaPulsada(KeyEvent.VK_ESCAPE)){
+        while (!this.detener && !this.consola.getTeclado().teclaPulsada(KeyEvent.VK_ESCAPE)){
             this.escena.ejecutarFrame();
             this.consola.esperarSiguienteFrame();
         }
