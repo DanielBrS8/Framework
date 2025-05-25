@@ -20,7 +20,7 @@ public abstract class Escena implements ElementoJuego{
         obj.inicializar();
         this.objetos.add(obj);
     }
-    public void finalizar(GameObject obj){
+    public void retirar(GameObject obj){
         obj.finalizar();
         this.objetos.remove(obj);
         this.juego=null;
