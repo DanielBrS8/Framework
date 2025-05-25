@@ -54,14 +54,14 @@ public abstract class SpriteGameObject extends GameObject {
     @Override
     public void finalizar() {
         if (this.sprite != null) {
-            this.consola.getCapaSprites().eliminarSprite(this.sprite);
+            super.consola.getCapaSprites().eliminarSprite(this.sprite);
         }
     }
 
 
     @Override
     public void inicializar() {
-        this.sprite = this.consola.getCapaSprites().crearSprite(this.imagen,
+        this.sprite = super.consola.getCapaSprites().crearSprite(this.imagen,
                 new Rectangle(this.puntoInicial.x,this.puntoInicial.y),
                 this.imagen.getWidth(null),
                 this.imagen.getHeight(null)
